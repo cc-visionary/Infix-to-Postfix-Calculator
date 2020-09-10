@@ -1,0 +1,250 @@
+|| Number: 1 ||
+INFIX: 123
+POSTFIX: 123 
+EVALUATED: 123
+
+|| Number: 2 ||
+INFIX: 1+2
+POSTFIX: 1 2 + 
+EVALUATED: 3
+
+|| Number: 3 ||
+INFIX: 1+2+3
+POSTFIX: 1 2 + 3 + 
+EVALUATED: 6
+
+|| Number: 4 ||
+INFIX: 12-13
+POSTFIX: 12 13 - 
+EVALUATED: -1
+
+|| Number: 5 ||
+INFIX: 1*2
+POSTFIX: 1 2 * 
+EVALUATED: 2
+
+|| Number: 6 ||
+INFIX: 11*6
+POSTFIX: 11 6 * 
+EVALUATED: 66
+
+|| Number: 7 ||
+INFIX: (1230/5)
+POSTFIX: 1230 5 / 
+EVALUATED: 246
+
+|| Number: 8 ||
+INFIX: 1*2+3/3
+POSTFIX: 1 2 * 3 3 / + 
+EVALUATED: 3
+
+|| Number: 9 ||
+INFIX: 1+2*3/6
+POSTFIX: 1 2 3 * 6 / + 
+EVALUATED: 2
+
+|| Number: 10 ||
+INFIX: (1+3*(5-7)+5)+100
+POSTFIX: 1 3 5 7 - * + 5 + 100 + 
+EVALUATED: 100
+
+|| Number: 11 ||
+INFIX: (100+20)
+POSTFIX: 100 20 + 
+EVALUATED: 120
+
+|| Number: 12 ||
+INFIX: (1+2)*3
+POSTFIX: 1 2 + 3 * 
+EVALUATED: 9
+
+|| Number: 13 ||
+INFIX: 120*2+3
+POSTFIX: 120 2 * 3 + 
+EVALUATED: 243
+
+|| Number: 14 ||
+INFIX: (1+2)/(3-4)
+POSTFIX: 1 2 + 3 4 - / 
+EVALUATED: -3
+
+|| Number: 15 ||
+INFIX: 0/10
+POSTFIX: 0 10 / 
+EVALUATED: 0
+
+|| Number: 16 ||
+INFIX: 10/0
+POSTFIX: 10 0 / 
+EVALUATED: Division by zero error!
+
+|| Number: 17 ||
+INFIX: 5%3
+POSTFIX: 5 3 % 
+EVALUATED: 2
+
+|| Number: 18 ||
+INFIX: 5%10
+POSTFIX: 5 10 % 
+EVALUATED: 5
+
+|| Number: 19 ||
+INFIX: 5%0
+POSTFIX: 5 0 % 
+EVALUATED: Division by zero error!
+
+|| Number: 20 ||
+INFIX: 1^2+3
+POSTFIX: 1 2 ^ 3 + 
+EVALUATED: 4
+
+|| Number: 21 ||
+INFIX: 1^(2+3)
+POSTFIX: 1 2 3 + ^ 
+EVALUATED: 1
+
+|| Number: 22 ||
+INFIX: 2^2^2^2
+POSTFIX: 2 2 2 2 ^ ^ ^ 
+EVALUATED: 65536
+
+|| Number: 23 ||
+INFIX: 2^2^2^2*3
+POSTFIX: 2 2 2 2 ^ ^ ^ 3 * 
+EVALUATED: 196608
+
+|| Number: 24 ||
+INFIX: 1+2>3-4
+POSTFIX: 1 2 + 3 4 - > 
+EVALUATED: 1
+
+|| Number: 25 ||
+INFIX: 1+2==3*4%5
+POSTFIX: 1 2 + 3 4 * 5 % == 
+EVALUATED: 0
+
+|| Number: 26 ||
+INFIX: 1+2==3-4%5
+POSTFIX: 1 2 + 3 4 5 % - == 
+EVALUATED: 0
+
+|| Number: 27 ||
+INFIX: 1+2==(3-4)%5
+POSTFIX: 1 2 + 3 4 - 5 % == 
+EVALUATED: 0
+
+|| Number: 28 ||
+INFIX: 0||1&&0
+POSTFIX: 0 1 0 && || 
+EVALUATED: 0
+
+|| Number: 29 ||
+INFIX: 0||0&&0
+POSTFIX: 0 0 0 && || 
+EVALUATED: 0
+
+|| Number: 30 ||
+INFIX: 1&&1||0
+POSTFIX: 1 1 && 0 || 
+EVALUATED: 1
+
+|| Number: 31 ||
+INFIX: 1&&1&&1
+POSTFIX: 1 1 && 1 && 
+EVALUATED: 1
+
+|| Number: 32 ||
+INFIX: 1+2*3+4
+POSTFIX: 1 2 3 * + 4 + 
+EVALUATED: 11
+
+|| Number: 33 ||
+INFIX: (1+2)*(3+4)
+POSTFIX: 1 2 + 3 4 + * 
+EVALUATED: 21
+
+|| Number: 34 ||
+INFIX: 1*2+3*4
+POSTFIX: 1 2 * 3 4 * + 
+EVALUATED: 14
+
+|| Number: 35 ||
+INFIX: 1*2+3*4^2
+POSTFIX: 1 2 * 3 4 2 ^ * + 
+EVALUATED: 50
+
+|| Number: 36 ||
+INFIX: 2^10
+POSTFIX: 2 10 ^ 
+EVALUATED: 1024
+
+|| Number: 37 ||
+INFIX: 5^2
+POSTFIX: 5 2 ^ 
+EVALUATED: 25
+
+|| Number: 38 ||
+INFIX: 2^5==5^2
+POSTFIX: 2 5 ^ 5 2 ^ == 
+EVALUATED: 0
+
+|| Number: 39 ||
+INFIX: (220+(4+13)+5)*3
+POSTFIX: 220 4 13 + + 5 + 3 * 
+EVALUATED: 726
+
+|| Number: 40 ||
+INFIX: (220+(4+13)+5)^2
+POSTFIX: 220 4 13 + + 5 + 2 ^ 
+EVALUATED: 58564
+
+|| Number: 41 ||
+INFIX: 10232*2
+POSTFIX: 10232 2 * 
+EVALUATED: 20464
+
+|| Number: 42 ||
+INFIX: (220+(4+13)+5)^2>10232*2
+POSTFIX: 220 4 13 + + 5 + 2 ^ 10232 2 * > 
+EVALUATED: 1
+
+|| Number: 43 ||
+INFIX: 5>3||2<3&&10==20*5
+POSTFIX: 5 3 > 2 3 < 10 20 5 * == && || 
+EVALUATED: 1
+
+|| Number: 44 ||
+INFIX: !0&&1
+POSTFIX: 0 ! 1 && 
+EVALUATED: 1
+
+|| Number: 45 ||
+INFIX: !3^3
+POSTFIX: 3 ! 3 ^ 
+EVALUATED: 0
+
+|| Number: 46 ||
+INFIX: !(3^3)
+POSTFIX: 3 3 ^ ! 
+EVALUATED: 0
+
+|| Number: 47 ||
+INFIX: !(!(!(5*0)))
+POSTFIX: 5 0 * ! ! ! 
+EVALUATED: 1
+
+|| Number: 48 ||
+INFIX: !1024/2^10+5-20/5
+POSTFIX: 1024 ! 2 10 ^ / 5 + 20 5 / - 
+EVALUATED: 1
+
+|| Number: 49 ||
+INFIX: !0*3^4
+POSTFIX: 0 ! 3 4 ^ * 
+EVALUATED: 81
+
+|| Number: 50 ||
+INFIX: 4^(1/2)
+POSTFIX: 4 1 2 / ^ 
+EVALUATED: 1
+
